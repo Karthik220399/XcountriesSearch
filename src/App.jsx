@@ -9,13 +9,13 @@ export default function App() {
 
   useEffect(() => {
     data();
-    setfilterData(country);
   }, []);
   function data() {
     fetch("https://restcountries.com/v3.1/all")
       .then((res) => res.json())
       .then((data1) => {
         setCountry(data1);
+        setfilterData(data1);
       })
       .catch((error) => console.error("Error fetchind data:", error));
   }
