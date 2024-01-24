@@ -53,7 +53,7 @@ export default function App() {
 
       <div className="fullCon">
         {filtedata.map((country) => (
-          <div className="container" key={country.car.ccn3}>
+          <div className="countryCard" key={country.car.ccn3}>
             <img
               className="imageConatiner"
               src={country.flags.png}
